@@ -1,7 +1,52 @@
+@font-face {
+  font-family: "raleway";
+  src: url("./fonts/Raleway-Medium.ttf");
+}
+
 html {
   font-size: 14px;
 }
 
 body {
-  background-color: azure;
+  font-family: "raleway";
+  padding: 0.5rem 0.5rem;
+}
+
+/*--- header  --*/
+.logo {
+  padding: 1rem 1rem 0 1rem;
+  border-top: 2px solid blue;
+}
+
+.menu {
+  padding: 0;
+}
+.menu-item {
+  display: block;
+  width: 100%;
+  position: relative;
+  list-style: none;
+  color: red;
+  /* border-bottom: 1px solid black; */
+}
+.menu-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  /* height: 10px; */
+  /* background-color: brown; */
+  border-bottom: 1px #000000 solid;
+}
+
+.menu-item a {
+  text-decoration: none;
+  line-height: 1.6rem;
+  padding: 1rem;
+}
+
+.header-img {
+  height: 100px;
+  width: 100%;
+  background: center / cover no-repeat url("../img/bg-1.jpg");
 }
