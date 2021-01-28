@@ -13,6 +13,10 @@ body {
 }
 
 /*--- header  --*/
+.header-container {
+  display: flex;
+  flex-direction: column;
+}
 .logo {
   padding: 1rem 1rem 0 1rem;
   border-top: 2px solid blue;
@@ -49,4 +53,61 @@ body {
   height: 100px;
   width: 100%;
   background: center / cover no-repeat url("../img/bg-1.jpg");
+}
+
+.phoneNumber {
+  padding-bottom: 1rem;
+  align-self: flex-end;
+}
+
+/*--- main ---*/
+
+/*-main article */
+.main-article {
+  margin: 1.5rem 0;
+}
+
+.main-article img {
+  width: 100%;
+}
+
+/*last articles */
+.last-articles-img {
+  width: 100%;
+}
+
+/*---features---*/
+.features {
+  display: flex;
+  flex-direction: column;
+}
+.features-card {
+  border: 1px #c0c0c0 solid;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.features-card span {
+  font-size: 3rem;
+}
+
+.features-card:last-child span {
+  display: grid;
+  font-size: 1.5rem;
+  grid-template: 25px 25px / 25px 25px;
+  justify-content: center;
+}
+
+/*--- footer --*/
+.footer-container {
+  background-color: #374f5a;
+  color: #ffffff;
+  padding: 1rem 1rem 0.1rem 1rem;
+}
+
+.facebook {
+  color: #0089cf;
+
+  /* font-size: 2rem; */
 }
