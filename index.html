@@ -15,10 +15,10 @@
     <div class="logo"><img src="./img/logo.svg" alt="logo de l'institut Saint-Laurent"></div>
     <nav class="navbar">
       <ul class="menu">
-        <li class="menu-item"><a href="#">Accueil</a></li>
+        <li class="menu-item active"><a href="#">Accueil</a></li>
         <li class="menu-item"><a href="#">A propos</a></li>
         <li class="menu-item"><a href="#">Blog</a></li>
-        <li class="menu-item"><a href="#">Contact</a></li>
+        <li class="menu-item"><a href="#contact">Contact</a></li>
       </ul>
 
     </nav>
@@ -26,10 +26,10 @@
     <div class="header-img"></div>
   </header>
   <main>
-    <section class="artcles-container">
+    <section class="articles-container">
       <article class="main-article">
         <div><img src="./img/we-are-thumb.jpg" alt="la collaboration dans l'équipe"></div>
-        <div>
+        <div class="main-article-content">
           <h1>We are compact</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio optio iste accusamus? Voluptas vero,
@@ -51,14 +51,10 @@
         </div>
       </article>
       <article class="last-article">
-        <div>
+        <div class="last-article-content">
           <h2>Derniers articles</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magni corrupti ipsum, at totam temporibus
-            quas
-            beatae tempora architecto esse molestias quae! Impedit, earum itaque. Amet quaerat aut tenetur, natus iusto
-            voluptatibus commodi est non nemo illum recusandae officiis minus ea labore obcaecati esse quibusdam debitis
-            nobis quo! Minima, voluptate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum veritatis impedit eaque facere et fugit voluptas! Facere molestias quis at?
           </p>
         </div>
         <div><img class="last-articles-img" src="./img/medium-2.jpg" alt=""></div>
@@ -92,20 +88,24 @@
     <div class="footer-resume">
       <h2>Résumé</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, cupiditate!</p>
-      <div class="social-network">
-       <button> 
-          <a href="#">
-            <img src="./img/facebook_icon.png" alt="lien facebook">
+      <div class="social-media">
+          <a href="#" class="logo-social-media">
+            <i class="fab fa-facebook-f"></i>
           </a>
-
-        </button>
-        
-        
+          <a href="#" class="logo-social-media">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="logo-social-media">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="logo-social-media">
+            <i class="fab fa-linkedin-in "></i>
+          </a>
       </div>
     </div>
     <div class="footer-categories">
       <h2>Catégories</h2>
-      <ul>
+      <ul class="categories-link">
         <li>
           <a href="#">Finance</a>
         </li>
@@ -120,17 +120,19 @@
         </li>
       </ul>
     </div>
-    <div class="footer-contact">
+    <div id="contact" class="footer-contact">
+      <h2>Contact</h2>
       <address>
         Adresse : Rue saint-Laurent 33 <br />4000 Liège. Belgique
       </address>
-      <a href="tel:+3242231131">Tél: 04 223 11 31</a>
+      <a class="footer-contact-phone" href="tel:+3242231131">Tél: 04 223 11 31</a>
     </div>
     <div class="footer-newsletter">
+      <h2>Newsletter</h2>
       <p>Stay informed about our news and events</p>
-      <form class="form-newsletter" action="./#" method="POST">
+      <form class="footer-form-newsletter" action="./#" method="POST">
         <input type="mail" placeholder="Your email" name="mail">
-        <input type="button" value="Subscribe">
+        <button type="submit">Subscribe</button>
       </form>
     </div>
     <div class="footer-copyright">

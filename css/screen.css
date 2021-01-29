@@ -10,6 +10,7 @@ html {
 body {
   font-family: "raleway";
   padding: 0.5rem 0.5rem;
+  margin: 0;
 }
 
 /*--- header  --*/
@@ -26,27 +27,32 @@ body {
   padding: 0;
 }
 .menu-item {
-  display: block;
   width: 100%;
   position: relative;
   list-style: none;
-  color: red;
-  /* border-bottom: 1px solid black; */
 }
 .menu-item::before {
   content: "";
   position: absolute;
   width: 100%;
   bottom: 0%;
-  /* height: 10px; */
-  /* background-color: brown; */
   border-bottom: 1px #000000 solid;
 }
 
 .menu-item a {
+  display: block;
   text-decoration: none;
   line-height: 1.6rem;
-  padding: 1rem;
+  padding: 0.1rem;
+  color: #0089cf;
+}
+
+.menu-item a:hover {
+  color: #0d2d3c;
+}
+
+.menu-item.active a {
+  color: #0d2d3c;
 }
 
 .header-img {
@@ -71,7 +77,20 @@ body {
   width: 100%;
 }
 
+.main-article-content {
+  padding-left: 2rem;
+}
+
 /*last articles */
+.last-article-content {
+  background-color: #0089cf;
+  color: #ffffff;
+  padding: 0.3rem 1.2rem;
+}
+.last-article-content h2::first-letter {
+  text-decoration: underline;
+}
+
 .last-articles-img {
   width: 100%;
 }
@@ -110,4 +129,63 @@ body {
   color: #0089cf;
 
   /* font-size: 2rem; */
+}
+.social-media {
+  display: flex;
+}
+
+.logo-social-media {
+  position: relative;
+  font-size: 15px;
+  text-decoration: none;
+  background: #0089cf;
+  border-radius: 50%;
+  color: white;
+  width: 35px;
+  height: 35px;
+  margin-right: 0.5rem;
+}
+
+.logo-social-media i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.categories-link li {
+  list-style: none;
+}
+.categories-link li::before {
+  content: ">";
+}
+.categories-link a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-contact-phone {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem 0;
+}
+
+.footer-form-newsletter input {
+  line-height: 2rem;
+}
+
+.footer-form-newsletter button {
+  line-height: 2rem;
+  background-color: #0089cf;
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  padding: 3px 17px;
+}
+
+.footer-copyright {
+  margin-top: 2rem;
+  border-top: 1px solid black;
+  text-align: center;
 }
