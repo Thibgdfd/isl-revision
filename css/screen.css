@@ -243,18 +243,17 @@ h1 {
 /*----------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
-  html {
-    font-size: 18px;
-  }
-
   /*------------------------------------------------*/
   /*                     header                     */
   /*------------------------------------------------*/
   .header-container {
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     font-size: calc(1rem * 1.2);
+  }
+  .logo {
+    padding: 0;
   }
   .logo img {
     width: 70%;
@@ -290,8 +289,7 @@ h1 {
   }
   .features-card {
     height: auto;
-    width: 250px;
-    font-size: calc(1rem * 1.5);
+    width: 200px;
   }
 
   /*---------------------------------------------------*/
@@ -308,5 +306,66 @@ h1 {
   .footer-form-newsletter button {
     line-height: 1.6rem;
     font-size: 14px;
+  }
+}
+
+/*----------------------------------------------------*/
+/*          media quieries PC 992px max 1130px              */
+/*----------------------------------------------------*/
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 1130px;
+    margin: 0 auto;
+  }
+
+  /*------------------------------------------------*/
+  /*                     header                     */
+  /*------------------------------------------------*/
+
+  /*Header*/
+
+  .header-container {
+    justify-content: space-between;
+  }
+
+  /*   Main   */
+
+  .main-article {
+    grid-template-columns: 35% 65%;
+    width: 80%;
+    margin: 1.2rem auto;
+  }
+
+  .last-article {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 80%;
+    height: 165px;
+    margin: 0 auto;
+  }
+  .features {
+    justify-content: center;
+  }
+  .features-card {
+    width: 250px;
+    height: 100%;
+    margin: 1rem 1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 10% 20% 20% 20% 20% 10%;
+    justify-content: space-around;
+  }
+  .footer-resume {
+    grid-column-start: 2;
+  }
+
+  .footer-form-newsletter input,
+  .footer-form-newsletter button {
+    line-height: 1.2rem;
+    font-size: 12px;
+  }
+  .footer-form-newsletter input {
+    width: 7rem;
   }
 }
