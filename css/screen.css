@@ -18,7 +18,6 @@ h1 {
   font-family: "raleway-regular";
 }
 
-/*-----------------------------------------------------*/
 /*                          header                     */
 /*-----------------------------------------------------*/
 .header-container {
@@ -77,11 +76,9 @@ h1 {
   align-self: flex-end;
 }
 
-/*-------------------------------------------------------*/
 /*                           main                        */
 /*-------------------------------------------------------*/
 
-/*-main article */
 .main-article {
   margin: 1.5rem 0;
 }
@@ -106,7 +103,6 @@ h1 {
   padding-left: 2rem;
 }
 
-/*last articles */
 .last-article {
   background-color: #0089cf;
 }
@@ -130,7 +126,6 @@ h1 {
   width: 100%;
 }
 
-/*---features---*/
 .features {
   display: flex;
   flex-direction: column;
@@ -154,9 +149,8 @@ h1 {
   justify-content: center;
 }
 
-/*-------------------------------------------*/
-/*------------------- footer ----------------*/
-/*-------------------------------------------*/
+/*------------------------- footer ---------------------*/
+/*------------------------------------------------------*/
 
 .footer-container {
   background-color: #374f5a;
@@ -209,7 +203,7 @@ h1 {
 .footer-contact-phone {
   display: block;
   text-decoration: none;
-  color: white;
+  color: #c0c0c0;
   padding: 1rem 0;
 }
 
@@ -238,25 +232,25 @@ h1 {
   font-size: 0.8rem;
 }
 
-/*----------------------------------------------------*/
-/*          media quieries tablette 768px             */
-/*----------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*                 media quieries tablette 768px             */
+/*-----------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
-  /*------------------------------------------------*/
-  /*                     header                     */
-  /*------------------------------------------------*/
+  /*                     header                         */
+  /*----------------------------------------------------*/
   .header-container {
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-end;
     font-size: calc(1rem * 1.2);
   }
   .logo {
     padding: 0;
+    width: 130px;
   }
   .logo img {
-    width: 70%;
+    width: 100%;
     height: auto;
   }
 
@@ -276,9 +270,8 @@ h1 {
     height: 310px;
   }
 
-  /*----------------------------------------------*/
-  /*                   Main                       */
-  /*----------------------------------------------*/
+  /*                          Main                       */
+  /*-----------------------------------------------------*/
   .main-article {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -292,9 +285,8 @@ h1 {
     width: 200px;
   }
 
-  /*---------------------------------------------------*/
-  /*                 Footer                            */
-  /*---------------------------------------------------*/
+  /*                      Footer                            */
+  /*--------------------------------------------------------*/
   .footer-container {
     display: grid;
     grid-template: 50% 50% / 50% 50%;
@@ -309,26 +301,37 @@ h1 {
   }
 }
 
-/*----------------------------------------------------*/
+/*----------------------------------------------------------*/
 /*          media quieries PC 992px max 1130px              */
-/*----------------------------------------------------*/
+/*----------------------------------------------------------*/
 @media screen and (min-width: 992px) {
   body {
     max-width: 1130px;
     margin: 0 auto;
   }
 
-  /*------------------------------------------------*/
-  /*                     header                     */
-  /*------------------------------------------------*/
-
-  /*Header*/
+  /*                          header                     */
+  /*-----------------------------------------------------*/
 
   .header-container {
-    justify-content: space-between;
+    font-size: calc(1rem * 0.8);
+    justify-content: space-evenly;
+    white-space: nowrap;
+  }
+  .logo {
+    width: 150px;
   }
 
-  /*   Main   */
+  .menu {
+    justify-content: flex-start;
+  }
+  .menu-item {
+    width: max-content;
+    padding: 0 20px;
+  }
+
+  /*                    Main                           */
+  /*---------------------------------------------------*/
 
   .main-article {
     grid-template-columns: 35% 65%;
@@ -348,9 +351,12 @@ h1 {
   }
   .features-card {
     width: 250px;
-    height: 100%;
+    height: 160px;
     margin: 1rem 1rem;
   }
+
+  /*                          Footer                   */
+  /*---------------------------------------------------*/
 
   .footer-container {
     grid-template-columns: 10% 20% 20% 20% 20% 10%;
