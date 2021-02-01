@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./css/screen.css" media="screen" type="text/css">
   <title>Institut Saint-Laurent</title>
   <script src="https://kit.fontawesome.com/2bb5c78836.js" crossorigin="anonymous"></script>
+  <script src="./js/index.js" defer></script>
 </head>
 
 <body>
@@ -134,8 +135,8 @@
         <h2>Newsletter</h2>
         <p>Stay informed about our news and events</p>
         <form class="footer-form-newsletter" action="./#" method="POST">
-          <input type="email" placeholder="Your email" name="mail">
-          <button type="submit">Subscribe</button>
+          <input type="email" placeholder="Your email" name="mail" required>
+          <button id="btn-subscribe" type="submit">Subscribe</button>
         </form>
       </div>
     </div>
